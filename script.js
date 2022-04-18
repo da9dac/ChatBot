@@ -4,8 +4,8 @@ const login = document.getElementById('login')
 let errStack = 0;
 
 login.addEventListener('click', () => {
-    if (id.value == 'acid') {
-        if (password.value == '0000') {
+    if (id.value == '20171151') {
+        if (password.value == '981128') {
             alert('로그인 되었습니다!')
         }
         else {
@@ -18,6 +18,6 @@ login.addEventListener('click', () => {
     }
 
     if (errStack >= 5) {
-        alert('비밀번호를 5회 이상 틀리셨습니다. 비밀번호 찾기를 권장드립니다.')
+        alert('비밀번호를 5회 이상 틀리셨습니다.')
     }
 })
