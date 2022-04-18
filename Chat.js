@@ -21,7 +21,7 @@ function getTime() {
     minutes = today.getMinutes();
 
     if (hours < 10) {
-        hours = "0" + hours //e.g. 7시의 경우 07시로 표시
+        hours = "0" + hours //7시의 경우 07시로 표시
     }
 
     if (minutes < 10) {
@@ -34,7 +34,7 @@ function getTime() {
 
 // 시작 메시지
 function firstBotMessage(){
-    let firstMessage = "안녕하세요!"
+    let firstMessage = "안녕하세요! 지원하는 명령어는 '!명령어'를 입력하시면 됩니다"
     document.getElementById("botStarterMessage").innerHTML = "<p class='botText'><span>" + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -80,14 +80,14 @@ function buttonSendText(sampleText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-//비행기 아이콘 누르면 메시지 전달
+//메시지 전달
 function sendButton() {
     getResponse();
 }
 
-//하트 버튼 누르기
+//버튼 누르기
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("임시")
 }
 
 //enter 키 눌러 메시지 보내기
